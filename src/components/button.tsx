@@ -3,7 +3,7 @@ export default function Button({
   ...props
 }: {
   children: React.ReactNode;
-  [key: string]: any;
+  [key: string]: string | number | boolean | React.ReactNode;
 }): JSX.Element {
   return (
     <button

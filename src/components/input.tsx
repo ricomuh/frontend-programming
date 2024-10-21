@@ -1,16 +1,15 @@
 export default function Input({
   label,
+  id,
   ...props
 }: {
   label: string;
-  [key: string]: any;
+  id: string;
+  [key: string]: string | number | boolean | undefined;
 }): JSX.Element {
   return (
     <div>
-      <label
-        htmlFor={props.id}
-        className="block text-sm font-medium text-gray-700"
-      >
+      <label htmlFor={id} className="block text-sm font-medium text-gray-700">
         {label}
       </label>
       <input
