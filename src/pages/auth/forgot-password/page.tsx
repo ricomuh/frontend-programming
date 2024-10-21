@@ -1,3 +1,5 @@
+import Button from "../../../components/button";
+
 export default function ForgotPasswordPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -30,12 +32,7 @@ export default function ForgotPasswordPage() {
           </div>
 
           <div>
-            <button
-              type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-            >
-              Password Reset
-            </button>
+            <Button type="submit">Reset Password</Button>
           </div>
         </form>
 

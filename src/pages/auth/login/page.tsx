@@ -1,3 +1,5 @@
+import Button from "../../../components/button";
+
 export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -56,12 +58,7 @@ export default function LoginPage() {
           </div>
 
           <div>
-            <button
-              type="submit"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
-            >
-              Login
-            </button>
+            <Button type="submit">Login</Button>
           </div>
 
           <div className="relative flex justify-center text-sm">
