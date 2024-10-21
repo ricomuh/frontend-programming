@@ -4,15 +4,20 @@ import Home from "./pages/page";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import LoginPage from "./pages/auth/login/page";
+import ForgotPasswordPage from "./pages/auth/forgot-password/page";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <LoginPage />,
   },
   {
     path: "/auth/login",
     element: <LoginPage />,
+  },
+  {
+    path: "/auth/forgot-password",
+    element: <ForgotPasswordPage />,
   },
 ]);
 
