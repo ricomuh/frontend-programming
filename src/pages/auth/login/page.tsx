@@ -1,4 +1,5 @@
 import Button from "../../../components/button";
+import Input from "../../../components/input";
 
 export default function LoginPage() {
   return (
@@ -9,34 +10,22 @@ export default function LoginPage() {
         </h2>
         <form className="space-y-6">
           <div>
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Email address
-            </label>
-            <input
+            <Input
+              label="Email address"
               type="email"
               name="email"
               id="email"
               placeholder="hello@example.com"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500 sm:text-sm"
             />
           </div>
 
           <div>
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700"
-            >
-              Password
-            </label>
-            <input
+            <Input
+              label="Password"
               type="password"
               name="password"
               id="password"
               placeholder="••••••••••"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-teal-500 focus:border-teal-500 sm:text-sm"
             />
           </div>
 
