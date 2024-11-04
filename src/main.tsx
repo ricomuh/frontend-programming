@@ -4,11 +4,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import LoginPage from "./pages/auth/login/page";
 import ForgotPasswordPage from "./pages/auth/forgot-password/page";
+import DashboardPage from "./pages/dashboard/page";
+import Expenses from "./pages/dashboard/expenses/page";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LoginPage />,
+    element: <DashboardPage />,
+  },
+  {
+    path: "/expenses",
+    element: <Expenses />,
   },
   {
     path: "/auth/login",
