@@ -4,8 +4,10 @@ export default function Header(): JSX.Element {
   return (
     <header className="border-b-2 p-6 flex items-center justify-between">
       <div className="flex">
-        <div className="font-bold text-lg">Username</div>
-        <div className="ms-6 text-gray-300">Oct 17, 2024</div>
+        <div className="font-bold text-lg">Rico Muhammad</div>
+        <div className="ms-6 text-gray-300">
+          {Date().split(" ").slice(1, 4).join(" ")}
+        </div>
       </div>
       <div className="flex items-center">
         <div>
