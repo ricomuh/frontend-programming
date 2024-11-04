@@ -1,25 +1,30 @@
 import { useState } from "react";
 import MainLayout from "../../../components/layouts/MainLayout";
 
-const transactions = [
-  {
-    item: "GTR 5",
-    shopName: "Gadget & Gear",
-    date: "17 May, 2023",
-    paymentMethod: "Credit Card",
-    amount: "$160.00",
-  },
-  {
-    item: "Polo shirt",
-    shopName: "XL fashions",
-    date: "17 May, 2023",
-    paymentMethod: "Credit Card",
-    amount: "$20.00",
-  },
-  // ... more transactions
-];
-
 const Transactions = () => {
+  const transactions: Array<{
+    item: string;
+    shopName: string;
+    date: string;
+    paymentMethod: string;
+    amount: string;
+  }> = [
+    {
+      item: "GTR 5",
+      shopName: "Gadget & Gear",
+      date: "17 May, 2023",
+      paymentMethod: "Credit Card",
+      amount: "$160.00",
+    },
+    {
+      item: "Polo shirt",
+      shopName: "XL fashions",
+      date: "17 May, 2023",
+      paymentMethod: "Credit Card",
+      amount: "$20.00",
+    },
+    // ... more transactions
+  ];
   const [displayedTransactions, setDisplayedTransactions] = useState(
     transactions.slice(0, 5)
   );
