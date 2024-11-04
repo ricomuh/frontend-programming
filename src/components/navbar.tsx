@@ -110,7 +110,7 @@ export default function Navbar(): JSX.Element {
   ];
 
   return (
-    <nav className="bg-slate-950 text-gray-200 w-36 sm:w-72 h-screen px-7 py-12 flex flex-col justify-between">
+    <nav className="bg-slate-950 text-gray-200 w-36 sm:w-72 h-screen px-7 py-12 flex flex-col justify-between sticky top-0">
       <div>
         <div className="flex justify-center mb-10">
           <span className="font-bold">FINE</span>bank.
